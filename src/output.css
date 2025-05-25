@@ -610,7 +610,6 @@
 * {
   font-variant: small-caps;
   font-family: 'Roboto', sans-serif;
-  overflow-y: hidden;
 }
 .custom-tilt {
   transform-style: preserve-3d;
