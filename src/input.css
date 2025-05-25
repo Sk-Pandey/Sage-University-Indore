@@ -43,8 +43,21 @@
         transform: translateX(0);
     }
   }
+  --animate-company: company 1s ease  forwards ;
+  @keyframes company{
+    0%{
+        transform: translateX(+1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+  }
 }
 #achiver{
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+#placement{
     animation-timeline: view();
     animation-range: entry 0;
 }
