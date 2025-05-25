@@ -535,6 +535,11 @@
       display: none;
     }
   }
+  .sm\:h-\[85vh\] {
+    @media (width >= 40rem) {
+      height: 85vh;
+    }
+  }
   .sm\:w-6\/12 {
     @media (width >= 40rem) {
       width: calc(6/12 * 100%);
