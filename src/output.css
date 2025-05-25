@@ -567,6 +567,11 @@
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
+  .sm\:text-shadow-\[2px_2px_2px\] {
+    @media (width >= 40rem) {
+      text-shadow: 2px 2px 2px var(--tw-text-shadow-color, currentcolor);
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
