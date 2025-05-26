@@ -16,7 +16,7 @@
 /* Correct animations */
 @keyframes intro-left {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
@@ -27,7 +27,7 @@
 
 @keyframes intro-right {
   0% {
-    transform: translateX(100%);
+    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
@@ -38,22 +38,22 @@
 
 @keyframes achivers {
   0% {
-    transform: translateX(-100%);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes company {
   0% {
-    transform: translateX(100%);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
