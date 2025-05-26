@@ -669,7 +669,7 @@
 }
 @keyframes intro-left {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
@@ -679,7 +679,7 @@
 }
 @keyframes intro-right {
   0% {
-    transform: translateX(100px);
+    transform: translateX(100%);
     opacity: 0;
   }
   100% {
@@ -689,7 +689,7 @@
 }
 @keyframes achivers {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
@@ -699,7 +699,7 @@
 }
 @keyframes company {
   0% {
-    transform: translateX(+100px);
+    transform: translateX(100%);
     opacity: 0;
   }
   100% {
