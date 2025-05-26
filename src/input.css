@@ -2,7 +2,6 @@
 *{
     font-variant: small-caps;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
       
 }
 /* sage image 3D rotate */
@@ -14,46 +13,68 @@
   transform: perspective(600px) rotateX(15deg);
 }
 
-/* Animations */
-@theme {
-  --animate-intro-left: intro-left 1s ease  forwards;
-  @keyframes intro-left{
-    0%{
-        transform: translateX(-1000px);
-    }
-    100%{
-        transform: translateX(0);
-    }
+/* Correct animations */
+@keyframes intro-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
   }
-  
-  --animate-intro-right: intro-right 1s ease  forwards;
-  @keyframes intro-right{
-    0%{
-        transform: translateX(+1000px);
-    }
-    100%{
-        transform: translateX(0);
-    }
-  }
-  --animate-achivers: achivers 1s ease  forwards ;
-  @keyframes achivers{
-    0%{
-        transform: translateX(-1000px);
-    }
-    100%{
-        transform: translateX(0);
-    }
-  }
-  --animate-company: company 1s ease  forwards ;
-  @keyframes company{
-    0%{
-        transform: translateX(+1000px);
-    }
-    100%{
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
+
+@keyframes intro-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes achivers {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes company {
+  0% {
+    transform: translateX(+100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation classes */
+.animate-intro-left {
+  animation: intro-left 1s ease forwards;
+}
+
+.animate-intro-right {
+  animation: intro-right 1s ease forwards;
+}
+
+.animate-achivers {
+  animation: achivers 1s ease forwards;
+}
+
+.animate-company {
+  animation: company 1s ease forwards;
+}
+
 #achiver{
     animation-timeline: view();
     animation-range: entry 0;
