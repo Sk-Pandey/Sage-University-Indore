@@ -15,7 +15,6 @@
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-900: oklch(37.9% 0.146 265.522);
-    --color-slate-400: oklch(70.4% 0.04 256.788);
     --color-slate-600: oklch(44.6% 0.043 257.281);
     --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -42,8 +41,6 @@
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -697,72 +694,74 @@
   font-variant: small-caps;
   font-family: 'Roboto', sans-serif;
 }
-.custom-tilt {
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-}
-.custom-tilt:hover {
-  transform: perspective(600px) rotateX(15deg);
-}
-@keyframes intro-left {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
+@media (min-width: 1024px) {
+  .custom-tilt {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
   }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
+  .custom-tilt:hover {
+    transform: perspective(600px) rotateX(15deg);
   }
-}
-@keyframes intro-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
+  @keyframes intro-left {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
+  @keyframes intro-right {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
-}
-@keyframes achivers {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
+  @keyframes achivers {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
+  @keyframes company {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
-}
-@keyframes company {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
+  .animate-intro-left {
+    animation: intro-left 1s ease forwards;
   }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
+  .animate-intro-right {
+    animation: intro-right 1s ease forwards;
   }
-}
-.animate-intro-left {
-  animation: intro-left 1s ease forwards;
-}
-.animate-intro-right {
-  animation: intro-right 1s ease forwards;
-}
-.animate-achivers {
-  animation: achivers 1s ease forwards;
-}
-.animate-company {
-  animation: company 1s ease forwards;
-}
-#achiver {
-  animation-timeline: view();
-  animation-range: entry 0;
-}
-#placement {
-  animation-timeline: view();
-  animation-range: entry 0;
+  .animate-achivers {
+    animation: achivers 1s ease forwards;
+  }
+  .animate-company {
+    animation: company 1s ease forwards;
+  }
+  #achiver {
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
+  #placement {
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
 }
 @property --tw-space-x-reverse {
   syntax: "*";

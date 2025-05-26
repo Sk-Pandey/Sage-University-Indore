@@ -4,7 +4,8 @@
     font-family: 'Roboto', sans-serif;
       
 }
-/* sage image 3D rotate */
+@media (min-width: 1024px){
+  /* sage image 3D rotate */
 .custom-tilt {
   transform-style: preserve-3d;
   transition: transform 0.5s;
@@ -82,4 +83,5 @@
 #placement{
     animation-timeline: view();
     animation-range: entry 0;
+}
 }
