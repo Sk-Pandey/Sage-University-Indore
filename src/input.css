@@ -58,6 +58,17 @@
     opacity: 1;
   }
 }
+@keyframes facility {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+}
 
 /* Animation classes */
 .animate-intro-left {
@@ -75,6 +86,9 @@
 .animate-company {
   animation: company 1s ease forwards;
 }
+.animate-facility{
+  animation: facility 1s ease forwards;
+}
 
 #achiver{
     animation-timeline: view();
@@ -84,4 +98,9 @@
     animation-timeline: view();
     animation-range: entry 0;
 }
+#facility{
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
 }
