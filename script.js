@@ -10,3 +10,7 @@ dropMenu.addEventListener("click",()=>{
         dropMenu.innerHTML=`<strong id="drop-menu" class="text-2xl font-bold text-[blue] hover:cursor-pointer">&#10006</strong>`
     }
 })
+// Optional: custom JS validation stub (not needed unless you plan to add JS checks)
+    function validateForm() {
+      return true; // HTML5 required already handles validation
+    }
