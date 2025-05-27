@@ -2,7 +2,7 @@
 *{
     font-variant: small-caps;
     font-family: 'Roboto', sans-serif;
-      
+    scroll-behavior: smooth;
 }
 *::selection{
   background-color: rgb(235, 161, 161);
