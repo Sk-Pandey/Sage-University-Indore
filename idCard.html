@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate IdCard</title>
+    <link href="src/output.css" rel="stylesheet">
+  </head>
+  <body class="bg-gradient-to-r from-red-400 via-blue-400 to-orange-300 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Form Section -->
+    <form class="w-full max-w-md bg-white shadow-lg rounded-xl p-6 space-y-4 mb-6">
+      <h2 class="text-center font-bold text-2xl text-purple-700">Student Details</h2>
+
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Student Name:</label>
+        <input type="text" id="stdname" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-purple-500" />
+      </div>
+
+      <div>
+        <label for="course" class="block text-sm font-medium text-gray-700">Course:</label>
+        <input type="text" id="stdcourse" name="course" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-purple-500" />
+      </div>
+
+      <div>
+        <label for="branch" class="block text-sm font-medium text-gray-700">Branch:</label>
+        <input type="text" id="stdbranch" name="branch" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-purple-500" />
+      </div>
+
+      <div>
+        <label for="enroll" class="block text-sm font-medium text-gray-700">Enrollment Number:</label>
+        <input type="number" id="stdenroll" name="enroll" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-purple-500" />
+      </div>
+
+      <div>
+        <label for="session" class="block text-sm font-medium text-gray-700">Session (Year):</label>
+        <input type="number" id="stdsession" name="session" placeholder="e.g. 2024" min="2000" max="2025" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-purple-500" />
+      </div>
+
+      <div>
+        <label for="photo" class="block text-sm font-medium text-gray-700">Upload Your Photo:</label>
+        <input type="file" id="stdphoto" name="photo" accept="image/*" required class="mt-1 block w-full border p-2 rounded border-gray-300 focus:outline-none focus:ring focus:border-purple-500 text-sm" />
+      </div>
+
+      <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-md transition">Generate</button>
+    </form>
+
+    <!-- ID Card Display -->
+    <div id="Card" class="custom-tilt cursor-pointer hidden bg-white w-full max-w-sm rounded-xl shadow-xl p-4 space-y-2">
+      <div class="flex items-center justify-center space-x-3">
+        <img src="https://i.ibb.co/nqVz4YDM/sage-removebg-preview.png" alt="Sage Logo" class="w-16 h-16" />
+        <div class="text-center">
+          <h1 class="text-red-600 font-bold text-xl tracking-wide">SAGE UNIVERSITY</h1>
+          <p class="text-red-600 font-semibold text-sm">INDORE</p>
+        </div>
+      </div>
+
+      <div class="bg-yellow-300 text-center py-1 font-cursive font-semibold text-sm">
+        Transforming Your Passion into Profession
+      </div>
+
+      <div class="flex flex-col items-center">
+        <strong class="text-sm">Institute of Advance Computing</strong>
+        <img id="photoPreview" class="h-28 w-24 object-cover my-2 rounded-md" src="" alt="Student Photo" />
+      </div>
+
+      <div class="text-sm space-y-1 px-2 font-medium">
+        <p id="name" class="uppercase">Name: SHASHIKANT PANDEY</p>
+        <p id="course" class="capitalize">Course: Bachelor of Technology (Hons.)</p>
+        <p id="branch" class="capitalize">Branch: Computer Science and Technology</p>
+      </div>
+
+      <div class="text-sm px-2 font-medium">
+        <p id="enroll">Enroll.No: 31092</p>
+        <p id="session">Issue Date: 05-Feb-2025</p>
+        <p id="valid">Valid Upto: 30-Jun-2028</p>
+      </div>
+
+      <div class="flex justify-end px-2 text-xs text-right font-semibold">
+        <div>
+          <p>Dr. Manish Choudhary</p>
+          <p>Registrar</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="idCard.js"></script>
+  </body>
+</html>
