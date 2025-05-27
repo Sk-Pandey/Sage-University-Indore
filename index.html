@@ -26,9 +26,19 @@
         <div id="contact-btn" class="p-3 lg:px-8 lg:font-bold lg:p-4  mr-3 rounded-xl bg-blue-500 hover:bg-blue-700 hover:cursor-pointer text-white font-semibold hidden md:block">
             <button>Contact</button>
         </div>
-        <div id="drop-menu" class="sm:hidden px-12 text-4xl font-bold text-[blue]">
-            &#8801
+        <div class="sm:hidden px-12  relative ">
+            <strong id="drop-menu" class="text-4xl font-bold text-[blue] hover:cursor-pointer">&#8801</strong>
+            <div id="menu" class="hidden bg-red-600 p-4 absolute right-12 top-8 text-sm rounded">
+            <ul class="flex flex-col space-y-2 justify-between font-extrabold text-gray-300">
+                <li class="hover:cursor-pointer hover:text-black">Home</li>
+                <li class="hover:cursor-pointer hover:text-black">Achivers</li>
+                <li class="hover:cursor-pointer hover:text-black">Facility</li>
+                <li class="hover:cursor-pointer hover:text-black">Updates</li>
+                <li class="hover:cursor-pointer hover:text-black">About</li>
+            </ul>
         </div>
+        </div>
+        
     </header>
     <!-- HEADER ENDS HERE -->
 
@@ -226,6 +236,6 @@
      </main>
      
      <!-- MAIN SECTION ENDS HERE -->
-    
+    <script src="script.js"></script>
 </body>
 </html>
