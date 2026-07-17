@@ -7,7 +7,7 @@ The project represents a digital presence for **Sage University Indore** and foc
 ## 🌐 Live Demo 
 
 **Website:** https://sk-pandey.github.io/Sage-University-Indore/
-
+ 
 ## 👨‍💻 Developer
  
 **Shashikant Pandey**
