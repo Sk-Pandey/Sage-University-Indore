@@ -1,7 +1,7 @@
 # 🎓 Sage University Indore Website
  
 A modern, responsive, and interactive university website built as a **Micro Project** using **HTML, CSS, JavaScript, and Tailwind CSS**.
-
+ 
 The project represents a digital presence for **Sage University Indore** and focuses on providing an engaging user experience through responsive design, smooth animations, and an innovative **Student ID Card Generator** feature.
 
 ## 🌐 Live Demo 
