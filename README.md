@@ -1,4 +1,4 @@
-# 🎓 Sage University Indore Website
+# 🎓 Sage University Indore Website    
    
 A modern, responsive, and interactive university website built as a **Micro Project** using **HTML, CSS, JavaScript, and Tailwind CSS**.
 
