@@ -21,7 +21,7 @@ GitHub: https://github.com/Sk-Pandey
 This project was developed as a college micro project to showcase frontend web development skills.
 
 The website includes multiple sections such as:
-
+    
 * Home Page
 * About Page
 * Contact Page
