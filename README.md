@@ -56,7 +56,7 @@ The main objective was to create a visually appealing and fully responsive unive
 * Enhanced user experience
 
 ### 🏆 University Showcase
-
+                                    
 * Achievers section
 * Placement partner section
 * Facilities section
