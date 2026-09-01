@@ -34,7 +34,7 @@ The website includes multiple sections such as:
 The main objective was to create a visually appealing and fully responsive university website that works seamlessly across desktop, tablet, and mobile devices.
 
 ---
-
+                     
 ## ✨ Key Features
 
 ### 🎨 Modern UI Design
