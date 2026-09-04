@@ -15,9 +15,9 @@ The project represents a digital presence for **Sage University Indore** and foc
 GitHub: https://github.com/Sk-Pandey
                          
 ---   
-           
+             
 ## 📖 Project Overview
-   
+                   
 This project was developed as a college micro project to showcase frontend web development skills.
        
 The website includes multiple sections such as:
